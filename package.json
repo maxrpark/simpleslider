@@ -1,5 +1,5 @@
 {
-  "name": "simpleslider",
+  "name": "@maxrpark/simpleslider",
   "version": "1.0.0",
   "description": "slider/carrousel ",
   "main": "index.js",
