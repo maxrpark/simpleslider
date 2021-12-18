@@ -1,0 +1,23 @@
+{
+  "name": "simpleslider",
+  "version": "1.0.0",
+  "description": "slider/carrousel ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxrpark/simpleslider.git"
+  },
+  "keywords": [
+    "slider",
+    "carrousel"
+  ],
+  "author": "Maxi R Park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxrpark/simpleslider/issues"
+  },
+  "homepage": "https://github.com/maxrpark/simpleslider#readme"
+}
