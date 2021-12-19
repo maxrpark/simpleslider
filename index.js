@@ -12,12 +12,26 @@ function simpleSlider() {
 
   const slides = document.querySelectorAll('.slide');
 
+  let containerWidth = '600px';
+  if (!slideContainer.attributes.width) {
+    containerWidth = '600px';
+  } else {
+    containerWidth = slideContainer.attributes.width.value;
+  }
+
+  let containerHeight = '600px';
+  if (!slideContainer.attributes.height) {
+    containerHeight = '600px';
+  } else {
+    containerHeight = slideContainer.attributes.width.value;
+  }
+
   slideContainer.style.position = 'relative';
   slideContainer.style.display = 'block';
   slideContainer.style.overflow = 'hidden';
   slideContainer.style.margin = '0 auto';
-  slideContainer.style.width = '600px';
-  slideContainer.style.height = '600px';
+  slideContainer.style.width = containerWidth;
+  slideContainer.style.height = containerHeight;
 
   slides.forEach((slide, slideIndex) => {
     const img = slide.getElementsByTagName('img');
