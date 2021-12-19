@@ -23,7 +23,7 @@ function simpleSlider() {
   if (!slideContainer.attributes.height) {
     containerHeight = '600px';
   } else {
-    containerHeight = slideContainer.attributes.width.value;
+    containerHeight = slideContainer.attributes.height.value;
   }
 
   slideContainer.style.position = 'relative';
