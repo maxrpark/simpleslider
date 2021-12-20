@@ -1,5 +1,7 @@
 # simpleslider
 
+[codepen](https://codepen.io/maxrpark/pen/ExwXRPb).
+
 This package is really simple to use and I let you display a slides-show or carousel on your website without having to worry at all.
 
 All you need to do is to create a section or div tag with the class slidesContainer and inside it place as many div tags as you want your slides-show or carousel to have. This div needs to have the slide class to work.
