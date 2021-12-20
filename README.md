@@ -51,10 +51,10 @@ simpleslider()
 
 simpelSlider have some basic params so you can start using it right away but also it gives you the chance to customize them
 
--- height: control height of sliderContainer, default it 60vh you can use vh or px
--- width: control height of sliderContainer default it 60vw you can use vh or px
--- autoSlide: The default is true which new a new slide every 3 seconds if autoSlide is false, there is no auto slide
--- arrow: The default is true, you want to have an auto carrousel and don't let the user click to the next slidarrow="false"
--- color: The default is #000000, but you can change the color of the arrow using RGB, color name or hex color.
--- arrowSize:
--- arrow:
+- height: control height of sliderContainer, default it 60vh you can use vh or px
+- width: control height of sliderContainer default it 60vw you can use vh or px
+- autoSlide: The default is true which new a new slide every 3 seconds if autoSlide is false, there is no auto slide
+- arrow: The default is true, you want to have an auto carrousel and don't let the user click to the next slidarrow="false"
+- color: The default is #000000, but you can change the color of the arrow using RGB, color name or hex color.
+- arrowSize:
+- arrow:
