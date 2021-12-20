@@ -77,7 +77,7 @@ simpelSlider have some basic params so you can start using it right away but als
       class="sliderContainer"
       height="300px"
       width="300px"
-      showArrows="true"
+      arrow="true"
       arrowSize="2"
       color="white"
     >
