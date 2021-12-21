@@ -1,6 +1,6 @@
-# simpleslider
+# Simpleslider
 
-[codepen](https://codepen.io/maxrpark/pen/ExwXRPb).
+Take a look at the example on [codepen](https://codepen.io/maxrpark/pen/ExwXRPb).
 
 This package is really simple to use and I let you display a slides-show or carousel on your website without having to worry at all.
 
@@ -27,9 +27,11 @@ import simpleslider from './node_modules/@maxcoding/simpleslider/index.js';
 
 #### Javascript
 
-After registering the package you just need to initiate like this
+After registering the package inside your javascript file you just need to past this:
 
+```
 simpleslider()
+```
 
 #### Vue
 
@@ -55,24 +57,21 @@ simpleslider()
     </section>
 ```
 
-### params
+### Params
 
-<!-- | Syntax    | Description | Syntax | Description |
-| --------- | ----------- | ------ | ----------- |
-| height    | Title       | Syntax | Description |
-| Paragraph | Text        | Syntax | Description | -->
+SimpelSlider have some basic params so you can start using it right away but also it gives you the chance to customize them.
 
-simpelSlider have some basic params so you can start using it right away but also it gives you the chance to customize them
+| Param     | Description                       | Default | Notes        |
+| --------- | --------------------------------- | ------- | ------------ |
+| height    | Control height of sliderContainer | 600px   | Use px or vh |
+| width     | Control width of sliderContainer  | 600px   | Use px or vh |
+| autoSlide | Run new slide every 3 seconds     | false   |              |
+| arrow     | In case you want autoSlide        |         |              |
+|           | without arrows                    | true    |              |
+| color     | Change color of arrows            | black   | RGB hex name |
+| arrowSize | Size of arrows                    | 1       | From 1 to 5  |
 
-- height: control height of sliderContainer, default it 60vh you can use vh or px
-- width: control height of sliderContainer default it 60vw you can use vh or px
-- autoSlide: The default is true which new a new slide every 3 seconds if autoSlide is false, there is no auto slide
-- arrow: The default is true, you want to have an auto carrousel and don't let the user click to the next slidarrow="false"
-- color: The default is #000000, but you can change the color of the arrow using RGB, color name or hex color.
-- arrowSize: value 1 to 5
-- arrow: true or false
-
-### example
+### Example
 
 ```
      <section
