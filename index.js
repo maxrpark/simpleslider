@@ -115,6 +115,18 @@ function simpleSlider() {
       arrowSize = slideContainer.attributes.arrowSize.value;
     }
 
+    // set arrow arrowWeight
+    if (!slideContainer.attributes.arrowWeight) {
+      arrowWeight = '5';
+    } else if (
+      slideContainer.attributes.arrowWeight &&
+      slideContainer.attributes.arrowWeight.value > 10
+    ) {
+      arrowWeight = '10';
+    } else {
+      arrowWeight = slideContainer.attributes.arrowWeight.value;
+    }
+
     rightArrow.style.border = `solid ${arrowColor}`;
     rightArrow.style.width = `${arrowSize}0px`;
     rightArrow.style.height = `${arrowSize}0px`;
