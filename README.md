@@ -5,7 +5,8 @@ Take a look at the example on [codepen](https://codepen.io/maxrpark/pen/ExwXRPb)
 This package is really simple to use and I let you display a slides-show or carousel on your website without having to worry at all.
 
 All you need to do is to create a section or div tag with the class slidesContainer and inside it place as many div tags as you want your slides-show or carousel to have. This div needs to have the slide class to work.
-Installation
+
+## Installation
 
 ```
 npm i @maxcoding/simpleslider
@@ -69,7 +70,7 @@ SimpelSlider have some basic params so you can start using it right away but als
 | arrow       | Display arrows                    | true    |              |
 | color       | Change color of arrows            | black   | RGB hex name |
 | arrowSize   | Size of arrows                    | 1       | From 1 to 5  |
-| arrowWeight | Size of weight                    | 1       | From 1 to 15 |
+| arrowWeight | Size of weight                    | 1       | From 1 to 10 |
 
 ### Example
 
