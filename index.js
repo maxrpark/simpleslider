@@ -12,9 +12,9 @@ function simpleSlider() {
 
   const slides = document.querySelectorAll('.slide');
 
-  let containerWidth = '600px';
+  let containerWidth = '100%';
   if (!slideContainer.attributes.width) {
-    containerWidth = '600px';
+    containerWidth = '100%';
   } else {
     containerWidth = slideContainer.attributes.width.value;
   }
@@ -302,20 +302,20 @@ function simpleSlider() {
         if (autoSlide) {
           resetInterval();
         }
-        // slides.forEach((slide) => {
-        //   if (slide.classList.contains('active')) {
-        //     slide.style.opacity = '1';
-        //     slide.style.transform = 'translateX(0)';
-        //   }
-        //   if (slide.classList.contains('next')) {
-        //     slide.style.opacity = '0';
-        //     slide.style.transform = 'translateX(100%)';
-        //   }
-        //   if (slide.classList.contains('last')) {
-        //     slide.style.opacity = '0';
-        //     slide.style.transform = 'translateX(-100%)';
-        //   }
-        // });
+        slides.forEach((slide) => {
+          if (slide.classList.contains('active')) {
+            slide.style.opacity = '1';
+            slide.style.transform = 'translateX(0)';
+          }
+          if (slide.classList.contains('next')) {
+            slide.style.opacity = '0';
+            slide.style.transform = 'translateX(100%)';
+          }
+          if (slide.classList.contains('last')) {
+            slide.style.opacity = '0';
+            slide.style.transform = 'translateX(-100%)';
+          }
+        });
       });
 
       function resetInterval() {
