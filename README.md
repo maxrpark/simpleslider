@@ -64,13 +64,14 @@ SimpelSlider have some basic params so you can start using it right away but als
 
 | Param       | Description                       | Default | Notes        |
 | ----------- | --------------------------------- | ------- | ------------ |
-| height      | Control height of sliderContainer | 600px   | Use px or vh |
+| height      | Control height of sliderContainer | 100%    | px, vh or %  |
 | width       | Control width of sliderContainer  | 600px   | Use px or vh |
-| autoSlide   | Run new slide every 3 seconds     | false   |              |
-| arrow       | Display arrows                    | true    |              |
 | color       | Change color of arrows            | black   | RGB hex name |
 | arrowSize   | Size of arrows                    | 1       | From 1 to 5  |
-| arrowWeight | Size of weight                    | 1       | From 1 to 10 |
+| arrowWeight | Size of weight                    | 5       | From 1 to 10 |
+
+<!--        | autoSlide                         | Run new slide every 3 seconds | false        |     |
+| arrow       | Display arrows                    | true                          |              | -->
 
 ### Example
 
@@ -79,7 +80,6 @@ SimpelSlider have some basic params so you can start using it right away but als
       class="sliderContainer"
       height="300px"
       width="300px"
-      arrow="true"
       arrowSize="2"
       color="white"
     >
