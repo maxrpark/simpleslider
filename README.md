@@ -1,3 +1,9 @@
+<div align="center">
+<h1>Simpleslider </h1>
+  
+![alt text](https://img.shields.io/badge/My%20first%20NPM%20package-1.0.0-red)  ![alt text](https://img.shields.io/badge/Made%20by-Max-brightgreen) ![alt text](https://img.shields.io/badge/NPM%20package-True-red)
+</div>
+
 # Simpleslider
 
 Take a look at the example on [codepen](https://codepen.io/maxrpark/pen/ExwXRPb).
