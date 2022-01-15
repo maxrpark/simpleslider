@@ -6,6 +6,8 @@
 
 # Simpleslider
 
+Take a look at the docs and examples in [simpleCode](https://simple-code.netlify.app/)
+
 Take a look at the example on [codepen](https://codepen.io/maxrpark/pen/ExwXRPb).
 
 This package is really simple to use and I let you display a slides-show or carousel on your website without having to worry at all.
