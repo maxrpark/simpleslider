@@ -6,13 +6,13 @@
 
 # Simpleslider
 
-Take a look at the docs and examples in [simpleCode](https://simple-code.netlify.app/)
+Take a look at the docs and examples on [simpleCode](https://simple-code.netlify.app/)
 
 Take a look at the example on [codepen](https://codepen.io/maxrpark/pen/ExwXRPb).
 
 This package is really simple to use and I let you display a slides-show or carousel on your website without having to worry at all.
 
-All you need to do is to create a section or div tag with the class slidesContainer and inside it place as many div tags as you want your slides-show or carousel to have. This div needs to have the slide class to work.
+All you need to do is to create a section or div tag with the class sliderContainer and inside it place as many div tags as you want your slides-show or carousel to have. This div needs to have the slide class to work.
 
 ## Installation
 
@@ -75,7 +75,7 @@ SimpelSlider have some basic params so you can start using it right away but als
 | height      | Control height of sliderContainer | 100%    | px, vh or %  |
 | width       | Control width of sliderContainer  | 600px   | Use px or vh |
 | color       | Change color of arrows            | black   | RGB hex name |
-| arrowSize   | Size of arrows                    | 1       | From 1 to 5  |
+| arrowSize   | Size of arrows                    | 2       | From 1 to 5  |
 | arrowWeight | Size of weight                    | 5       | From 1 to 10 |
 
 <!--        | autoSlide                         | Run new slide every 3 seconds | false        |     |

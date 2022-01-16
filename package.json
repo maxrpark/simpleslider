@@ -1,6 +1,6 @@
 {
   "name": "@maxcoding/simpleslider",
-  "version": "1.2.0",
+  "version": "1.2.4",
   "description": "slider/carrousel ",
   "main": "index.js",
   "publishConfig": {

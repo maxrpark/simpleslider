@@ -68,7 +68,7 @@ function simpleSlider() {
 
   let showArrows;
   let autoSlide = false;
-  let arrowSize = '5';
+  let arrowSize = '2';
   let arrowWeight = '5';
 
   // Show arrows
@@ -105,7 +105,7 @@ function simpleSlider() {
 
     // set arrow size
     if (!slideContainer.attributes.arrowSize) {
-      arrowSize = '5';
+      arrowSize = '2';
     } else if (
       slideContainer.attributes.arrowSize &&
       slideContainer.attributes.arrowSize.value > 5
