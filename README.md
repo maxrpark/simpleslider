@@ -34,6 +34,12 @@ or
 import simpleslider from './node_modules/@maxcoding/simpleslider/index.js';
 ```
 
+```
+Don't forget
+
+Your javascript file must be type="module".
+```
+
 #### Javascript
 
 After registering the package inside your javascript file you just need to past this:
