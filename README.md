@@ -16,7 +16,7 @@ All you need to do is to create a section or div tag with the class sliderContai
 
 ## Installation
 
-```
+```bash
 npm i @maxcoding/simpleslider
 ```
 
@@ -24,13 +24,13 @@ npm i @maxcoding/simpleslider
 
 ### Register the packeget
 
-```
-import simpleSlider from '@maxcoding/simpleslider'
+```js
+import simpleSlider from '@maxcoding/simpleslider';
 ```
 
 or
 
-```
+```js
 import simpleslider from './node_modules/@maxcoding/simpleslider/index.js';
 ```
 
@@ -38,19 +38,19 @@ import simpleslider from './node_modules/@maxcoding/simpleslider/index.js';
 
 After registering the package inside your javascript file you just need to past this:
 
-```
-simpleslider()
+```js
+simpleslider();
 ```
 
 ##### Don't forget
 
-```
+```js
 Your javascript file must be type="module".
 ```
 
 #### Vue
 
-```
+```js
   mounted() {
     simpleSlider();
   },
@@ -58,18 +58,18 @@ Your javascript file must be type="module".
 
 ## Template
 
-```
-    <section class="sliderContainer">
-      <div class="slide">
-        <img src="cat1.jpg" alt="" />
-      </div>
-      <div class="slide">
-        <img src="cat2.jpg" alt="" />
-      </div>
-      <div class="slide">
-        <img src="cat3.jpg" alt="" />
-      </div>
-    </section>
+```html
+<section class="sliderContainer">
+  <div class="slide">
+    <img src="cat1.jpg" alt="" />
+  </div>
+  <div class="slide">
+    <img src="cat2.jpg" alt="" />
+  </div>
+  <div class="slide">
+    <img src="cat3.jpg" alt="" />
+  </div>
+</section>
 ```
 
 ### Params
@@ -89,22 +89,69 @@ SimpelSlider have some basic params so you can start using it right away but als
 
 ### Example
 
+```html
+<section
+  class="sliderContainer"
+  height="300px"
+  width="300px"
+  arrowSize="2"
+  color="white"
+>
+  <div class="slide">
+    <img src="cat1.jpg" alt="" />
+  </div>
+  <div class="slide">
+    <img src="cat2.jpg" alt="" />
+  </div>
+  <div class="slide">
+    <img src="cat3.jpg" alt="" />
+  </div>
+</section>
 ```
-     <section
-      class="sliderContainer"
-      height="300px"
-      width="300px"
-      arrowSize="2"
-      color="white"
-    >
-      <div class="slide">
-        <img src="cat1.jpg" alt="" />
-      </div>
-      <div class="slide">
-        <img src="cat2.jpg" alt="" />
-      </div>
-      <div class="slide">
-        <img src="cat3.jpg" alt="" />
-      </div>
-    </section>
+
+Take a look at the example on [codepen](https://codepen.io/maxrpark/details/BawMWGR).
+
+## Dynamic data
+
+To use Simple Slider with dynamic data, you need to initiate the package after you get the data. For example in plain javascript you need to do this:
+
+1. Select the container
+2. Fetch the data
+3. After you get the data, you can map over it and create the slides
+4. Initiate the package
+
+## Code
+
+```js
+const sliderContainer = document.querySelector('.sliderContainer'); // Select the container
+const fetchProjects = async () => {
+  // your function
+  try {
+    const resp = await fetch(
+      // Fetch the data
+      'https://my-portfolio-blog-website.netlify.app/api/myProjects'
+    );
+    const data = await resp.json();
+    const projectImg = data // Map over it and create the slides
+      .map((project) => {
+        return `
+      <a class="slide" href="${project.pageUrl}" target="_blank"
+        >visit
+        <img src="${project.url}" alt="cateria" />
+      </a>
+        `;
+      })
+      .join('');
+    sliderContainer.innerHTML = projectImg;
+    simpleslider(); // Initiate the package
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+fetchProjects(); // Run your function
 ```
+
+## Example
+
+Take a look at the docs and examples on [codepen](https://codepen.io/maxrpark/pen/popjqxG)
