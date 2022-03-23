@@ -36,7 +36,7 @@ import simpleslider from './node_modules/@maxcoding/simpleslider/index.js';
 
 #### Javascript
 
-After registering the package inside your javascript file you just need to past this:
+After registering the package inside your javascript file you just need to iniciate the simpleSlider like this:
 
 ```js
 simpleslider();
@@ -48,13 +48,9 @@ simpleslider();
 Your javascript file must be type="module".
 ```
 
-#### Vue
+#### Frameworks
 
-```js
-  mounted() {
-    simpleSlider();
-  },
-```
+For static data you can iniciate the package when the component is mouting. If you are going to use it with dynamic data read **_Dynamic data_** section at the end of file.
 
 ## Template
 
